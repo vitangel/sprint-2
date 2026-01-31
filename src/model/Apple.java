@@ -7,10 +7,8 @@ public class Apple extends model.Food implements model.Discountable {
     private String colour;
 
     public Apple(int amount, double price, String colour) {
-        this.amount = amount;
-        this.price = price;
+        super(amount, price, true); // яблоки вегетарианские
         this.colour = colour;
-        this.isVegetarian = true;
     }
 
     public String getColour() {
@@ -19,9 +17,6 @@ public class Apple extends model.Food implements model.Discountable {
 
     @Override
     public double getDiscount() {
-        if (colour.equals(Colour.RED)) {
-            return Discount.DISCOUNT_FOR_RED_APPLE;
-        }
-        return 0;
+        return colour.equals(Colour.RED) ? Discount.DISCOUNT_FOR_RED_APPLE : 0;
     }
 }
