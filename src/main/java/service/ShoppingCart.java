@@ -1,8 +1,7 @@
-package service;
+package main.java.service;
 
 
-import model.Food;
-import model.Discountable;
+import main.java.model.Food;
 
 public class ShoppingCart {
     private Food[] items;
@@ -25,10 +24,8 @@ public class ShoppingCart {
         double total = 0;
         for (Food item : items) {
             double price = item.getAmount() * item.getPrice();
-            if (item instanceof Discountable) {
-                double discount = ((Discountable) item).getDiscount();
-                price = price * (100 - discount) / 100;
-            }
+            double discount = item.getDiscount();
+            price = price * (100 - discount) / 100;
             total += price;
         }
         return total;

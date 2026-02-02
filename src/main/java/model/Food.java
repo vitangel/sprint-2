@@ -1,4 +1,4 @@
-package model;
+package main.java.model;
 
 public abstract class Food implements Discountable {
     protected int amount;

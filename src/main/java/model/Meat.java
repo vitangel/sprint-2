@@ -1,4 +1,4 @@
-package model;
+package main.java.model;
 
 public class Meat extends Food {
     public Meat(int amount, double price) {

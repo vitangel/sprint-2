@@ -1,8 +1,9 @@
-import model.Apple;
-import model.Meat;
-import model.Food;
-import model.constants.Colour;
-import service.ShoppingCart;
+package main.java.service;
+
+import main.java.model.Apple;
+import main.java.model.Meat;
+import main.java.model.Food;
+import main.java.model.constants.Colour;
 
 public class Main {
     public static void main(String[] args) {

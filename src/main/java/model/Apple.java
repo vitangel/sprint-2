@@ -1,9 +1,9 @@
-package model;
+package main.java.model;
 
-import model.constants.Colour;
-import model.constants.Discount;
+import main.java.model.constants.Colour;
+import main.java.model.constants.Discount;
 
-public class Apple extends model.Food implements model.Discountable {
+public class Apple extends main.java.model.Food {
     private String colour;
 
     public Apple(int amount, double price, String colour) {
