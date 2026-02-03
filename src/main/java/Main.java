@@ -1,9 +1,10 @@
-package main.java.service;
+package main.java;
 
 import main.java.model.Apple;
 import main.java.model.Meat;
 import main.java.model.Food;
 import main.java.model.constants.Colour;
+import main.java.service.ShoppingCart;
 
 public class Main {
     public static void main(String[] args) {
